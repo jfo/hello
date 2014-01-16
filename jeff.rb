@@ -1,3 +1,4 @@
+require 'pry'
 class Human
 
   attr_reader :corporeal_being, :consciousness
@@ -13,7 +14,7 @@ end
 
 class Jeff < Human
 
-  attr_reader :s, :l, :edumactions, :jorbs, :contacts, :beard, :trivia
+  attr_reader :s, :l, :edumactions, :jorbs, :contacts, :beard
 
   def initialize
 
@@ -33,7 +34,7 @@ class Jeff < Human
                2009 => 'Adjunct Faculty of Music, NYU',
                2011 => ['Musician', 'Owner and Teacher at Guitar from the Ground Up', 'Freelance Photographer']}
 
-    @contact = { :email => 'jeffowler@gmail.com',
+    @contacts = { :email => 'jeffowler@gmail.com',
                  :phone => '336-693-5342',
                  :twitter => '@jeffowler',
                  :github => 'http://www.github.com/urthbound',
@@ -93,5 +94,6 @@ class Jeff < Human
     leaps
   end
 
-
 end
+
+binding.pry
