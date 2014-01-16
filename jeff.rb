@@ -1,4 +1,3 @@
-require 'pry'
 class Human
 
   attr_reader :corporeal_being, :consciousness
@@ -95,5 +94,3 @@ class Jeff < Human
   end
 
 end
-
-binding.pry
