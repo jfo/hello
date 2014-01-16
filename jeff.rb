@@ -57,12 +57,13 @@ class Jeff < Human
 
   def shave
     @beard = false
+    puts 'Ok, I shaved!'
   end
 
 
   def dont_shave_for_a_while
-    # I'm going for that Jeff Bridges / Scandinavian fisherman look
     @beard = true
+    puts "I'm going for that Jeff Bridges / Scandinavian fisherman look"
   end
 
 
@@ -88,7 +89,7 @@ class Jeff < Human
   def leaps
     leaps = 0
     (1983..Time.now.year).each do |year|
-      leaps += 1if year % 4 == 0
+      leaps += 1 if year % 4 == 0
     end
     leaps
   end
