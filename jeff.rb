@@ -13,7 +13,7 @@ end
 
 class Jeff < Human
 
-  attr_accessor :s, :l, :edumactions, :jorbs, :contacts, :beard, :trivia
+  attr_reader :s, :l, :edumactions, :jorbs, :contacts, :beard, :trivia
 
   def initialize
 
