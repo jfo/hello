@@ -22,7 +22,7 @@ class Jeff < Human
     @a = age_right_now
     @s = 'm'
     @l = 'Brooklyn, NY'
-    @beard = true
+    @beard = false
 
     @edumaction = { :undergrad => 'BA Music and English, UNC Chapel Hill 2005',
                     :grad => 'MM Jazz Guitar Performance, NYU 2011'}
